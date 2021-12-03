@@ -1,5 +1,7 @@
 package ebook.iak.compose.series1
 
+import android.annotation.SuppressLint
+import androidx.compose.animation.animateColor
 import androidx.compose.animation.core.*
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -32,7 +34,16 @@ fun AnimatePositionWithInt() {
         mutableStateOf(0.dp)
     }
     //val xOffset = animateDpAsState(targetValue = position, tween(800,easing = LinearOutSlowInEasing))
-    val xOffset = animateDpAsState(targetValue = position, spring(Spring.DampingRatioHighBouncy,Spring.StiffnessMedium))
+    /*val xOffset = animateDpAsState(
+        targetValue = position, animationSpec = infiniteRepeatable(
+            animation = tween(durationMillis = 800),
+            repeatMode = RepeatMode.Reverse
+        )
+    )*/
+    val xOffset =
+        animateDpAsState(targetValue = position, tween(800, easing = LinearOutSlowInEasing))
+
+
 
     BoxWithConstraints(
         modifier = Modifier
@@ -51,14 +62,14 @@ fun AnimatePositionWithInt() {
             shape = RoundedCornerShape(100),
             backgroundColor = Green,
             onClick = {
-                if (isLeft){
+                if (isLeft) {
                     position = this.maxWidth - 165.dp
                     isLeft = false
-                }else{
+                } else {
                     position = 0.dp
                     isLeft = true
                 }
-            },indication = rememberRipple(),
+            }, indication = rememberRipple(),
             modifier = Modifier
                 .offset(x = xOffset.value, 0.dp)
                 .padding(vertical = 15.dp, horizontal = 5.dp)
@@ -66,6 +77,94 @@ fun AnimatePositionWithInt() {
         ) {
             Text(
                 text = if (isLeft) "Move To Right" else "Move To Left",
+                textAlign = TextAlign.Center,
+                color = White,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 20.dp, vertical = 5.dp)
+            )
+        }
+
+    }
+}
+
+enum class CardPosition {
+    ISLEFT,
+    ISRIGHT
+}
+
+@SuppressLint("UnusedTransitionTargetStateParameter")
+@ExperimentalMaterialApi
+@Preview(showBackground = true)
+@Composable
+fun AnimateColorAndPosition() {
+
+
+    BoxWithConstraints(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(5.dp)
+            .border(width = 2.dp, shape = RoundedCornerShape(15), color = Blue)
+            .background(color = Color.Transparent, shape = RoundedCornerShape(15))
+    ) {
+
+        var currentState by remember { mutableStateOf(CardPosition.ISLEFT) }
+        val transition = updateTransition(currentState, label = "First Trans")
+        val color by transition.animateColor(transitionSpec = {
+            tween(800, easing = LinearOutSlowInEasing)
+        }, label = "") {
+            when (it) {
+                CardPosition.ISRIGHT ->
+                    Blue
+                else -> Green
+            }
+        }
+        //val xOffset = animateDpAsState(targetValue = position, tween(800,easing = LinearOutSlowInEasing))
+        /*val xOffset = animateDpAsState(
+            targetValue = position, animationSpec = infiniteRepeatable(
+                animation = tween(durationMillis = 800),
+                repeatMode = RepeatMode.Reverse
+            )
+        )*/
+        val xOffset by transition.animateDp(
+            transitionSpec = {
+                tween(800, easing = LinearOutSlowInEasing)
+
+                /*when {
+                    CardPosition.ISLEFT isTransitioningTo CardPosition.ISRIGHT ->
+                        spring(stiffness = 50f)
+                    else ->
+                        tween(durationMillis = 500)
+                }*/
+            }, label = "xOffset"
+        ) { state ->
+            when (state) {
+                CardPosition.ISLEFT -> 0.dp
+                CardPosition.ISRIGHT -> this.maxWidth - 165.dp
+            }
+        }
+        //val xOffset = animateDpAsState(targetValue = position, tween(800,easing = LinearOutSlowInEasing))
+
+
+        Card(
+            elevation = 3.dp,
+            shape = RoundedCornerShape(100),
+            backgroundColor = color,
+            onClick = {
+                currentState = if (currentState == CardPosition.ISLEFT) {
+                    CardPosition.ISRIGHT
+                } else {
+                    CardPosition.ISLEFT
+
+                }
+            }, indication = rememberRipple(),
+            modifier = Modifier
+                .offset(x = xOffset, 0.dp)
+                .padding(vertical = 15.dp, horizontal = 5.dp)
+                .width(150.dp)
+        ) {
+            Text(
+                text = if (currentState == CardPosition.ISLEFT) "Move To Right" else "Move To Left",
                 textAlign = TextAlign.Center,
                 color = White,
                 modifier = Modifier
