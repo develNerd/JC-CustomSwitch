@@ -33,6 +33,7 @@ enum class SwitchState {
 @Composable
 fun CustomSwitch() {
 
+    
     var currentState by remember { mutableStateOf(SwitchState.NOT_ENABLED) }
     val transition = updateTransition(currentState, label = "SwitchState")
     val color by transition.animateColor(transitionSpec = {
