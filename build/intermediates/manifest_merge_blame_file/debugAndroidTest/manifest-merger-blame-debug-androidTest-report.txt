@@ -1,0 +1,152 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="github.iakakpo.customswitch.test" >
+4
+5    <uses-sdk
+5-->C:\Users\Farmerline\AndroidStudioProjects\AnimatingCompose\JC-CustomSwitch\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest273371514547302032.xml:5:5-74
+6        android:minSdkVersion="21"
+6-->C:\Users\Farmerline\AndroidStudioProjects\AnimatingCompose\JC-CustomSwitch\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest273371514547302032.xml:5:15-41
+7        android:targetSdkVersion="31" />
+7-->C:\Users\Farmerline\AndroidStudioProjects\AnimatingCompose\JC-CustomSwitch\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest273371514547302032.xml:5:42-71
+8
+9    <instrumentation
+9-->C:\Users\Farmerline\AndroidStudioProjects\AnimatingCompose\JC-CustomSwitch\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest273371514547302032.xml:11:5-15:82
+10        android:name="androidx.test.runner.AndroidJUnitRunner"
+10-->C:\Users\Farmerline\AndroidStudioProjects\AnimatingCompose\JC-CustomSwitch\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest273371514547302032.xml:11:22-76
+11        android:functionalTest="false"
+11-->C:\Users\Farmerline\AndroidStudioProjects\AnimatingCompose\JC-CustomSwitch\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest273371514547302032.xml:14:22-52
+12        android:handleProfiling="false"
+12-->C:\Users\Farmerline\AndroidStudioProjects\AnimatingCompose\JC-CustomSwitch\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest273371514547302032.xml:13:22-53
+13        android:label="Tests for github.iakakpo.customswitch.test"
+13-->C:\Users\Farmerline\AndroidStudioProjects\AnimatingCompose\JC-CustomSwitch\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest273371514547302032.xml:15:22-80
+14        android:targetPackage="github.iakakpo.customswitch.test" />
+14-->C:\Users\Farmerline\AndroidStudioProjects\AnimatingCompose\JC-CustomSwitch\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest273371514547302032.xml:12:22-78
+15
+16    <uses-permission android:name="android.permission.REORDER_TASKS" />
+16-->[androidx.test:core:1.4.0] C:\Users\Farmerline\.gradle\caches\transforms-3\1c07181af4d155e30bcf0c4f60b817c8\transformed\jetified-core-1.4.0\AndroidManifest.xml:24:5-72
+16-->[androidx.test:core:1.4.0] C:\Users\Farmerline\.gradle\caches\transforms-3\1c07181af4d155e30bcf0c4f60b817c8\transformed\jetified-core-1.4.0\AndroidManifest.xml:24:22-69
+17
+18    <queries>
+18-->[androidx.test:runner:1.4.0] C:\Users\Farmerline\.gradle\caches\transforms-3\d85846896002ec5f3cbce7598bd5dd7f\transformed\runner-1.4.0\AndroidManifest.xml:24:5-28:15
+19        <package android:name="androidx.test.orchestrator" />
+19-->[androidx.test:runner:1.4.0] C:\Users\Farmerline\.gradle\caches\transforms-3\d85846896002ec5f3cbce7598bd5dd7f\transformed\runner-1.4.0\AndroidManifest.xml:25:9-62
+19-->[androidx.test:runner:1.4.0] C:\Users\Farmerline\.gradle\caches\transforms-3\d85846896002ec5f3cbce7598bd5dd7f\transformed\runner-1.4.0\AndroidManifest.xml:25:18-59
+20        <package android:name="androidx.test.services" />
+20-->[androidx.test:runner:1.4.0] C:\Users\Farmerline\.gradle\caches\transforms-3\d85846896002ec5f3cbce7598bd5dd7f\transformed\runner-1.4.0\AndroidManifest.xml:26:9-58
+20-->[androidx.test:runner:1.4.0] C:\Users\Farmerline\.gradle\caches\transforms-3\d85846896002ec5f3cbce7598bd5dd7f\transformed\runner-1.4.0\AndroidManifest.xml:26:18-55
+21        <package android:name="com.google.android.apps.common.testing.services" />
+21-->[androidx.test:runner:1.4.0] C:\Users\Farmerline\.gradle\caches\transforms-3\d85846896002ec5f3cbce7598bd5dd7f\transformed\runner-1.4.0\AndroidManifest.xml:27:9-83
+21-->[androidx.test:runner:1.4.0] C:\Users\Farmerline\.gradle\caches\transforms-3\d85846896002ec5f3cbce7598bd5dd7f\transformed\runner-1.4.0\AndroidManifest.xml:27:18-80
+22    </queries>
+23
+24    <application
+24-->C:\Users\Farmerline\AndroidStudioProjects\AnimatingCompose\JC-CustomSwitch\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest273371514547302032.xml:7:5-9:19
+25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+25-->[androidx.core:core:1.7.0] C:\Users\Farmerline\.gradle\caches\transforms-3\22fc58c1aba25a38624b19fcaec4a163\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+26        android:debuggable="true" >
+27        <uses-library android:name="android.test.runner" />
+27-->C:\Users\Farmerline\AndroidStudioProjects\AnimatingCompose\JC-CustomSwitch\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest273371514547302032.xml:8:9-60
+27-->C:\Users\Farmerline\AndroidStudioProjects\AnimatingCompose\JC-CustomSwitch\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest273371514547302032.xml:8:23-57
+28
+29        <activity
+29-->[androidx.compose.ui:ui-tooling:1.0.5] C:\Users\Farmerline\.gradle\caches\transforms-3\109f85f20b4dc6c9aae2c857f4676038\transformed\jetified-ui-tooling-1.0.5\AndroidManifest.xml:25:9-27:39
+30            android:name="androidx.compose.ui.tooling.PreviewActivity"
+30-->[androidx.compose.ui:ui-tooling:1.0.5] C:\Users\Farmerline\.gradle\caches\transforms-3\109f85f20b4dc6c9aae2c857f4676038\transformed\jetified-ui-tooling-1.0.5\AndroidManifest.xml:26:13-71
+31            android:exported="true" />
+31-->[androidx.compose.ui:ui-tooling:1.0.5] C:\Users\Farmerline\.gradle\caches\transforms-3\109f85f20b4dc6c9aae2c857f4676038\transformed\jetified-ui-tooling-1.0.5\AndroidManifest.xml:27:13-36
+32        <activity
+32-->[androidx.test:core:1.4.0] C:\Users\Farmerline\.gradle\caches\transforms-3\1c07181af4d155e30bcf0c4f60b817c8\transformed\jetified-core-1.4.0\AndroidManifest.xml:27:9-34:20
+33            android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity"
+33-->[androidx.test:core:1.4.0] C:\Users\Farmerline\.gradle\caches\transforms-3\1c07181af4d155e30bcf0c4f60b817c8\transformed\jetified-core-1.4.0\AndroidManifest.xml:28:13-99
+34            android:exported="true"
+34-->[androidx.test:core:1.4.0] C:\Users\Farmerline\.gradle\caches\transforms-3\1c07181af4d155e30bcf0c4f60b817c8\transformed\jetified-core-1.4.0\AndroidManifest.xml:29:13-36
+35            android:theme="@android:style/Theme" >
+35-->[androidx.test:core:1.4.0] C:\Users\Farmerline\.gradle\caches\transforms-3\1c07181af4d155e30bcf0c4f60b817c8\transformed\jetified-core-1.4.0\AndroidManifest.xml:30:13-49
+36            <intent-filter>
+36-->[androidx.test:core:1.4.0] C:\Users\Farmerline\.gradle\caches\transforms-3\1c07181af4d155e30bcf0c4f60b817c8\transformed\jetified-core-1.4.0\AndroidManifest.xml:31:13-33:29
+37                <action android:name="android.intent.action.MAIN" />
+37-->[androidx.test:core:1.4.0] C:\Users\Farmerline\.gradle\caches\transforms-3\1c07181af4d155e30bcf0c4f60b817c8\transformed\jetified-core-1.4.0\AndroidManifest.xml:32:17-69
+37-->[androidx.test:core:1.4.0] C:\Users\Farmerline\.gradle\caches\transforms-3\1c07181af4d155e30bcf0c4f60b817c8\transformed\jetified-core-1.4.0\AndroidManifest.xml:32:25-66
+38            </intent-filter>
+39        </activity>
+40        <activity
+40-->[androidx.test:core:1.4.0] C:\Users\Farmerline\.gradle\caches\transforms-3\1c07181af4d155e30bcf0c4f60b817c8\transformed\jetified-core-1.4.0\AndroidManifest.xml:35:9-42:20
+41            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity"
+41-->[androidx.test:core:1.4.0] C:\Users\Farmerline\.gradle\caches\transforms-3\1c07181af4d155e30bcf0c4f60b817c8\transformed\jetified-core-1.4.0\AndroidManifest.xml:36:13-95
+42            android:exported="true"
+42-->[androidx.test:core:1.4.0] C:\Users\Farmerline\.gradle\caches\transforms-3\1c07181af4d155e30bcf0c4f60b817c8\transformed\jetified-core-1.4.0\AndroidManifest.xml:37:13-36
+43            android:theme="@android:style/Theme" >
+43-->[androidx.test:core:1.4.0] C:\Users\Farmerline\.gradle\caches\transforms-3\1c07181af4d155e30bcf0c4f60b817c8\transformed\jetified-core-1.4.0\AndroidManifest.xml:38:13-49
+44            <intent-filter>
+44-->[androidx.test:core:1.4.0] C:\Users\Farmerline\.gradle\caches\transforms-3\1c07181af4d155e30bcf0c4f60b817c8\transformed\jetified-core-1.4.0\AndroidManifest.xml:31:13-33:29
+45                <action android:name="android.intent.action.MAIN" />
+45-->[androidx.test:core:1.4.0] C:\Users\Farmerline\.gradle\caches\transforms-3\1c07181af4d155e30bcf0c4f60b817c8\transformed\jetified-core-1.4.0\AndroidManifest.xml:32:17-69
+45-->[androidx.test:core:1.4.0] C:\Users\Farmerline\.gradle\caches\transforms-3\1c07181af4d155e30bcf0c4f60b817c8\transformed\jetified-core-1.4.0\AndroidManifest.xml:32:25-66
+46            </intent-filter>
+47        </activity>
+48        <activity
+48-->[androidx.test:core:1.4.0] C:\Users\Farmerline\.gradle\caches\transforms-3\1c07181af4d155e30bcf0c4f60b817c8\transformed\jetified-core-1.4.0\AndroidManifest.xml:43:9-50:20
+49            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity"
+49-->[androidx.test:core:1.4.0] C:\Users\Farmerline\.gradle\caches\transforms-3\1c07181af4d155e30bcf0c4f60b817c8\transformed\jetified-core-1.4.0\AndroidManifest.xml:44:13-103
+50            android:exported="true"
+50-->[androidx.test:core:1.4.0] C:\Users\Farmerline\.gradle\caches\transforms-3\1c07181af4d155e30bcf0c4f60b817c8\transformed\jetified-core-1.4.0\AndroidManifest.xml:45:13-36
+51            android:theme="@android:style/Theme.Dialog" >
+51-->[androidx.test:core:1.4.0] C:\Users\Farmerline\.gradle\caches\transforms-3\1c07181af4d155e30bcf0c4f60b817c8\transformed\jetified-core-1.4.0\AndroidManifest.xml:46:13-56
+52            <intent-filter>
+52-->[androidx.test:core:1.4.0] C:\Users\Farmerline\.gradle\caches\transforms-3\1c07181af4d155e30bcf0c4f60b817c8\transformed\jetified-core-1.4.0\AndroidManifest.xml:31:13-33:29
+53                <action android:name="android.intent.action.MAIN" />
+53-->[androidx.test:core:1.4.0] C:\Users\Farmerline\.gradle\caches\transforms-3\1c07181af4d155e30bcf0c4f60b817c8\transformed\jetified-core-1.4.0\AndroidManifest.xml:32:17-69
+53-->[androidx.test:core:1.4.0] C:\Users\Farmerline\.gradle\caches\transforms-3\1c07181af4d155e30bcf0c4f60b817c8\transformed\jetified-core-1.4.0\AndroidManifest.xml:32:25-66
+54            </intent-filter>
+55        </activity>
+56
+57        <provider
+57-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Farmerline\.gradle\caches\transforms-3\f0fef0678a57aff454a268ff3683da91\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+58            android:name="androidx.startup.InitializationProvider"
+58-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Farmerline\.gradle\caches\transforms-3\f0fef0678a57aff454a268ff3683da91\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+59            android:authorities="github.iakakpo.customswitch.test.androidx-startup"
+59-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Farmerline\.gradle\caches\transforms-3\f0fef0678a57aff454a268ff3683da91\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+60            android:exported="false" >
+60-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Farmerline\.gradle\caches\transforms-3\f0fef0678a57aff454a268ff3683da91\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+61            <meta-data
+61-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Farmerline\.gradle\caches\transforms-3\f0fef0678a57aff454a268ff3683da91\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+62                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+62-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Farmerline\.gradle\caches\transforms-3\f0fef0678a57aff454a268ff3683da91\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+63                android:value="androidx.startup" />
+63-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Farmerline\.gradle\caches\transforms-3\f0fef0678a57aff454a268ff3683da91\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+64            <meta-data
+64-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Farmerline\.gradle\caches\transforms-3\18e5844b9a73a26185a74c5ff080299f\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+65                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+65-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Farmerline\.gradle\caches\transforms-3\18e5844b9a73a26185a74c5ff080299f\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+66                android:value="androidx.startup" />
+66-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Farmerline\.gradle\caches\transforms-3\18e5844b9a73a26185a74c5ff080299f\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+67            <meta-data
+67-->[androidx.profileinstaller:profileinstaller:1.0.4] C:\Users\Farmerline\.gradle\caches\transforms-3\95e794a1bfeee050728102fcc51191b7\transformed\jetified-profileinstaller-1.0.4\AndroidManifest.xml:31:13-33:52
+68                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+68-->[androidx.profileinstaller:profileinstaller:1.0.4] C:\Users\Farmerline\.gradle\caches\transforms-3\95e794a1bfeee050728102fcc51191b7\transformed\jetified-profileinstaller-1.0.4\AndroidManifest.xml:32:17-85
+69                android:value="androidx.startup" />
+69-->[androidx.profileinstaller:profileinstaller:1.0.4] C:\Users\Farmerline\.gradle\caches\transforms-3\95e794a1bfeee050728102fcc51191b7\transformed\jetified-profileinstaller-1.0.4\AndroidManifest.xml:33:17-49
+70        </provider>
+71
+72        <receiver
+72-->[androidx.profileinstaller:profileinstaller:1.0.4] C:\Users\Farmerline\.gradle\caches\transforms-3\95e794a1bfeee050728102fcc51191b7\transformed\jetified-profileinstaller-1.0.4\AndroidManifest.xml:36:9-45:20
+73            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+73-->[androidx.profileinstaller:profileinstaller:1.0.4] C:\Users\Farmerline\.gradle\caches\transforms-3\95e794a1bfeee050728102fcc51191b7\transformed\jetified-profileinstaller-1.0.4\AndroidManifest.xml:37:13-76
+74            android:directBootAware="false"
+74-->[androidx.profileinstaller:profileinstaller:1.0.4] C:\Users\Farmerline\.gradle\caches\transforms-3\95e794a1bfeee050728102fcc51191b7\transformed\jetified-profileinstaller-1.0.4\AndroidManifest.xml:38:13-44
+75            android:enabled="true"
+75-->[androidx.profileinstaller:profileinstaller:1.0.4] C:\Users\Farmerline\.gradle\caches\transforms-3\95e794a1bfeee050728102fcc51191b7\transformed\jetified-profileinstaller-1.0.4\AndroidManifest.xml:39:13-35
+76            android:exported="true"
+76-->[androidx.profileinstaller:profileinstaller:1.0.4] C:\Users\Farmerline\.gradle\caches\transforms-3\95e794a1bfeee050728102fcc51191b7\transformed\jetified-profileinstaller-1.0.4\AndroidManifest.xml:40:13-36
+77            android:permission="android.permission.DUMP" >
+77-->[androidx.profileinstaller:profileinstaller:1.0.4] C:\Users\Farmerline\.gradle\caches\transforms-3\95e794a1bfeee050728102fcc51191b7\transformed\jetified-profileinstaller-1.0.4\AndroidManifest.xml:41:13-57
+78            <intent-filter>
+78-->[androidx.profileinstaller:profileinstaller:1.0.4] C:\Users\Farmerline\.gradle\caches\transforms-3\95e794a1bfeee050728102fcc51191b7\transformed\jetified-profileinstaller-1.0.4\AndroidManifest.xml:42:13-44:29
+79                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+79-->[androidx.profileinstaller:profileinstaller:1.0.4] C:\Users\Farmerline\.gradle\caches\transforms-3\95e794a1bfeee050728102fcc51191b7\transformed\jetified-profileinstaller-1.0.4\AndroidManifest.xml:43:17-91
+79-->[androidx.profileinstaller:profileinstaller:1.0.4] C:\Users\Farmerline\.gradle\caches\transforms-3\95e794a1bfeee050728102fcc51191b7\transformed\jetified-profileinstaller-1.0.4\AndroidManifest.xml:43:25-88
+80            </intent-filter>
+81        </receiver>
+82    </application>
+83
+84</manifest>

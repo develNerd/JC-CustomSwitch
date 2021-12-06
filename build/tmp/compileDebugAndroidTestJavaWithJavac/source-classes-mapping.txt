@@ -1,0 +1,2 @@
+github/iakakpo/customswitch/test/BuildConfig.java
+ github.iakakpo.customswitch.test.BuildConfig
