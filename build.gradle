@@ -52,6 +52,30 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    afterEvaluate {
+        publishing {
+            publications {
+                // Creates a Maven publication called "release".
+                release(MavenPublication) {
+                    // Applies the component for the release build variant.
+                    from components.release
+
+                    // You can then customize attributes of the publication as shown below.
+                    groupId = 'github.iakakpo.jc-compose'
+                    artifactId = 'final'
+                    version = '0.1.5'
+                }
+                // Creates a Maven publication called “debug”.
+                debug(MavenPublication) {
+                    // Applies the component for the debug build variant.
+                    from components.debug
+                    groupId = 'github.iakakpo.jc-compose'
+                    artifactId = 'final'
+                    version = '0.1.5'
+                }
+            }
+        }
+    }
 }
 
 dependencies {
