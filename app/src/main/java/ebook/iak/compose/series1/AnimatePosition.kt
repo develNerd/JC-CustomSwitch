@@ -89,8 +89,8 @@ fun AnimatePositionWithInt() {
 }
 
 enum class CardPosition {
-    ISLEFT,
-    ISRIGHT
+    IS_LEFT,
+    IS_RIGHT
 }
 
 @SuppressLint("UnusedTransitionTargetStateParameter")
@@ -108,13 +108,13 @@ fun AnimateColorAndPosition() {
             .background(color = Color.Transparent, shape = RoundedCornerShape(15))
     ) {
 
-        var currentState by remember { mutableStateOf(CardPosition.ISLEFT) }
+        var currentState by remember { mutableStateOf(CardPosition.IS_LEFT) }
         val transition = updateTransition(currentState, label = "First Trans")
         val color by transition.animateColor(transitionSpec = {
             tween(800, easing = LinearOutSlowInEasing)
         }, label = "") {
             when (it) {
-                CardPosition.ISRIGHT ->
+                CardPosition.IS_RIGHT ->
                     Blue
                 else -> Green
             }
@@ -139,8 +139,8 @@ fun AnimateColorAndPosition() {
             }, label = "xOffset"
         ) { state ->
             when (state) {
-                CardPosition.ISLEFT -> 0.dp
-                CardPosition.ISRIGHT -> this.maxWidth - 165.dp
+                CardPosition.IS_LEFT -> 0.dp
+                CardPosition.IS_RIGHT -> this.maxWidth - 165.dp
             }
         }
         //val xOffset = animateDpAsState(targetValue = position, tween(800,easing = LinearOutSlowInEasing))
@@ -151,10 +151,10 @@ fun AnimateColorAndPosition() {
             shape = RoundedCornerShape(100),
             backgroundColor = color,
             onClick = {
-                currentState = if (currentState == CardPosition.ISLEFT) {
-                    CardPosition.ISRIGHT
+                currentState = if (currentState == CardPosition.IS_LEFT) {
+                    CardPosition.IS_RIGHT
                 } else {
-                    CardPosition.ISLEFT
+                    CardPosition.IS_LEFT
 
                 }
             }, indication = rememberRipple(),
@@ -164,7 +164,7 @@ fun AnimateColorAndPosition() {
                 .width(150.dp)
         ) {
             Text(
-                text = if (currentState == CardPosition.ISLEFT) "Move To Right" else "Move To Left",
+                text = if (currentState == CardPosition.IS_LEFT) "Move To Right" else "Move To Left",
                 textAlign = TextAlign.Center,
                 color = White,
                 modifier = Modifier

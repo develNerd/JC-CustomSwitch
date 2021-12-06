@@ -1,7 +1,10 @@
-package ebook.iak.compose.series2
+package github.iakakpo.customswitch
 
 import androidx.compose.animation.animateColor
-import androidx.compose.animation.core.*
+import androidx.compose.animation.core.FastOutLinearInEasing
+import androidx.compose.animation.core.animateDp
+import androidx.compose.animation.core.tween
+import androidx.compose.animation.core.updateTransition
 import androidx.compose.foundation.*
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.*
@@ -14,16 +17,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import ebook.iak.compose.series1.CardPosition
-import ebook.iak.compose.ui.theme.Gray
-import ebook.iak.compose.ui.theme.LightGreen
-import ebook.iak.compose.ui.theme.White
 
 /**
  * @author Isaac Akakpo
- * Created on 12/3/2021 7:42 PM
+ * Created on 12/6/2021 11:10 AM
  */
-
 enum class SwitchState {
     IS_ENABLED,
     NOT_ENABLED
@@ -40,13 +38,10 @@ fun CustomSwitch() {
     }, label = "") {
         when (it) {
             SwitchState.IS_ENABLED ->
-                LightGreen
-            else -> White
+                Color.LightGray
+            else -> Color.White
         }
     }
-
-
-
     BoxWithConstraints(
         modifier = Modifier
             .width(70.dp)
@@ -85,7 +80,7 @@ fun CustomSwitch() {
                 .offset(x = xOffset, y = 0.dp)
                 .padding(3.dp),
             shape = RoundedCornerShape(100),
-            backgroundColor = White,
+            backgroundColor = Color.White,
             border = BorderStroke(0.5.dp, color = Color.LightGray)
         ) {
 
