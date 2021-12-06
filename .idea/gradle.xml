@@ -10,7 +10,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/ComposeCustomSwitch" />
+            <option value="$PROJECT_DIR$/JC-CustomSwitch" />
             <option value="$PROJECT_DIR$/app" />
           </set>
         </option>

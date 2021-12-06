@@ -31,9 +31,9 @@ enum class SwitchState {
 
 @Preview(showBackground = true)
 @Composable
-fun CustomSwitch() {
+public fun JCSwitch() {
 
-    
+
     var currentState by remember { mutableStateOf(SwitchState.NOT_ENABLED) }
     val transition = updateTransition(currentState, label = "SwitchState")
     val color by transition.animateColor(transitionSpec = {
@@ -95,3 +95,4 @@ fun CustomSwitch() {
 
     }
 }
+
