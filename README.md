@@ -6,6 +6,8 @@
 
 [Isaac Akakpo](https://twitter.com/_edem)
 
+![Sample](https://imgur.com/gKFrS7M)
+
 ## Installation
 
 > Step 1
