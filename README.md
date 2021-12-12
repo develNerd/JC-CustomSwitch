@@ -6,7 +6,7 @@
 
 [Isaac Akakpo](https://twitter.com/_edem)
 
-![Sample](https://imgur.com/gKFrS7M)
+![](sample.gif)
 
 ## Installation
 
