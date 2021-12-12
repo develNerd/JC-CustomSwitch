@@ -33,8 +33,29 @@ dependencies {
 	}
 ```
 
+## Usage
+
+```
+
+  JCSwitch() {isChecked ->
+                       
+
+                    }
+```
+
+**Library Params**
 
 
+```
+fun JCSwitch(
+    modifier: Modifier = Modifier,
+    enabledColor: Color = MaterialTheme.colors.primary,
+    disabledColor: Color = SwitchBgDisabled,
+    size: Dp = 50.dp,
+    isChecked: Boolean = false,
+    onCheckChanged: (Boolean) -> Unit
+)
+```
 
 
 
