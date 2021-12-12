@@ -1,4 +1,4 @@
-package jc.iakakpo.customswitch.ui.theme
+package jc.iakakpo.customswitch.theme
 
 import androidx.compose.ui.graphics.Color
 
