@@ -2,6 +2,8 @@
 
 **A Jetpack Compose Custom Switch Library**
 
+[![Release](https://jitpack.io/v/develNerd/JC-CustomSwitch.svg)](https://jitpack.io/#develNerd/JC-CustomSwitch)
+
 ## Developed by 
 
 [Isaac Akakpo](https://twitter.com/_edem)
