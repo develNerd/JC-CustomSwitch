@@ -23,9 +23,19 @@ class MainActivity : ComponentActivity() {
         setContent {
 
             CustomSwitchTheme {
-                
+                var checkStatus by remember {
+                    mutableStateOf("Switch is not  Checked")
+                }
                 Box(modifier = Modifier.fillMaxSize(),contentAlignment = Alignment.Center) {
+                    JCSwitch(size = 70.dp) {isChecked ->
+                        checkStatus = if (isChecked){
+                            "Switch is Checked"
+                        }else{
+                            "Switch is not  Checked"
+                        }
 
+                    }
+                    Text(text = checkStatus,modifier = Modifier.align(Alignment.BottomCenter).padding(20.dp),fontSize = 16.sp)
                 }
             }
         }
