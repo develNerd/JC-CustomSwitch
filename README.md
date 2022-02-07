@@ -18,37 +18,34 @@
 
 Add this in your root build.gradle at the end of repositories:
 
-```
+```groovy
 allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
-	}
+    repositories {
+        maven { url 'https://jitpack.io' }
+    }
+}
 ```
 
 > Step 2. Add the dependency
 
-```
+```groovy
 dependencies {
-	        implementation 'com.github.develNerd:JC-CustomSwitch:Tag'
-	}
+    implementation 'com.github.develNerd:JC-CustomSwitch:Tag'
+}
 ```
 
 ## Usage
 
-```
+```kotlin
+JCSwitch() {isChecked ->
 
-  JCSwitch() {isChecked ->
-                       
-
-                    }
+}
 ```
 
 **Library Params**
 
 
-```
+```kotlin
 fun JCSwitch(
     modifier: Modifier = Modifier,
     enabledColor: Color = MaterialTheme.colors.primary,
@@ -60,7 +57,7 @@ fun JCSwitch(
 ```
 
 
-## Licence
+## License
 
 ```
 MIT License
